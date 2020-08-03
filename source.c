@@ -680,6 +680,13 @@ extern int yesno OF((void));
 #define zdecode
 
 
+/* here is some code
+ *
+ */
+
+static int hello;
+
+
 #ifdef RCSID
 static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:16:58 jloup Exp $";
 #endif

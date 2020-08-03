@@ -9,7 +9,7 @@ function random_result {
 	lineCount="$(wc -l source.c | cut -d ' ' -f 1)"
 	lineNumber=$(($RANDOM % $lineCount))
 
-	jq -M -n --arg ln $lineNumber '{type: "RANDOM_BUG", message: "Random bug was found. It looks extremely scary.", file: "source.c", line: $ln}'
+	jq -M -n --arg ln $lineNumber '{type: "RANDOM_BUG", message: "Random bug was found. It looks extremely scary.", file: "source.c", line: $ln | tonumber}'
 
 }
 

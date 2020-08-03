@@ -26,7 +26,7 @@ applicable)
 	;;
 
 run)
-	numBugs=$(($RANDOM % 10))
+	numBugs=$((3 + ($RANDOM % 10)))
 	jq --slurp '.' <<< "$(
 	for _i in $(seq 1 $numBugs); do
 		random_result
